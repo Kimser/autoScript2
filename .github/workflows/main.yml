@@ -2,7 +2,7 @@ name: TestAutoScript
 
 on:
   schedule:
-    - cron: "30 22 * * *" # 每天UTC时间的22点，对应北京时间的早上6点
+    - cron: "59 1 * * *" # 每天UTC时间的22点，对应北京时间的早上6点
   workflow_dispatch:
 
 env:
