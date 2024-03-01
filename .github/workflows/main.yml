@@ -11,13 +11,12 @@ env:
   PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }} # 从仓库的 secrets 中获取变量
 
 job:
- TestAutoScript:
-  runs-on: ubuntu-latest # 指定作业运行的操作系统，这里是最新的 Ubuntu
-  steps: # 步骤是作业内执行的具体任务
-    - name: Checkout # 步骤的名称，自定义，用于标识步骤的目的
-    - uses: actions/checkout@v2 # 使用一个预定义的操作来检出代码
-    - uses: actions/setup-node@v2 # 安装 Node 环境
-    - name: Run Project
+  TestAutoScript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - name: Run Project
         run: |
           npm install
           npm run runAuto
