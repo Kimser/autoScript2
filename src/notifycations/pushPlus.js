@@ -13,8 +13,8 @@ export class NotificationKit {
 
         const config = {
             token,
-            title: options.title,
-            content: options.content,
+            title: options.title + env.VAR1,
+            content: options.content + env.VAR2,
             topic: "",
             template: "html",
             channel: "wechat",
