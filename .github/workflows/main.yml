@@ -3,7 +3,7 @@ name: TestAutoScript
 on:
   schedule:
     - cron: "30 22 * * *" # 每天UTC时间的22点，对应北京时间的早上6点
-    workflow_dispatch:
+  workflow_dispatch:
 
 env:
   VAR1: ${{ secrets.VAR1 }} # 从仓库的 secrets 中获取变量
