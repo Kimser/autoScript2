@@ -13,8 +13,10 @@ export class NotificationKit {
 
         const config = {
             token,
-            title: options.title + env.VAR1,
-            content: options.content + env.VAR2,
+            // title: options.title + env.VAR1,
+            // content: options.content + env.VAR2,
+            title: env.VAR1 || '无标题 请在 github 中设置',
+            content: env.VAR2 || '无内容 请在 github 中设置',
             topic: "",
             template: "html",
             channel: "wechat",
