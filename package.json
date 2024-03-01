@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "runAuto": "node ./dist/index.js"
+    "runAuto": "node dist/index.js"
   },
   "author": "Kimser",
   "license": "ISC",

@@ -19,4 +19,5 @@ jobs:
       - name: Run Project
         run: |
           npm install
+          npm run build
           npm run runAuto
