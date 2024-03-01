@@ -10,7 +10,7 @@ env:
   VAR2: ${{ secrets.VAR2 }} # 从仓库的 secrets 中获取变量
   PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }} # 从仓库的 secrets 中获取变量
 
-job:
+jobs:
   TestAutoScript:
     runs-on: ubuntu-latest
     steps:
